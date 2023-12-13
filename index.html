@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Departamento</title>
+    <style>
+      @import url(CSS/external.css);
+      .texto-justificado {
+        text-align: justify;
+      }
+      p.texto-justificado::first-letter {
+        font-size: 300%;
+        color: #d1633c;
+      }
+      @media screen and (min-width: 400px) {
+        nav ul li {
+          flex: none;
+        }
+        nav ul {
+          justify-content: center;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        header p {
+          display: block;
+          margin-top: -1.5em;
+          font-family: Georgia, serif;
+          font-style: italic;
+          font-size: 1.2em;
+        }
+        main,
+        h2,
+        h3 {
+          font-family: Minha Fonte, Georgia, serif;
+        }
+        h2,
+        h3 {
+          font-weight: bold;
+        }
+        main {
+          line-height: 1.8em;
+          padding: 1em;
+          border: double 4px #eaddc4;
+          border-radius: 25px;
+          margin: 2.5%;
+        }
+      }
+      @media screen and (min-width: 940px) {
+        #container {
+          display: grid;
+          grid-template-rows: auto min-height 5em;
+          grid-template-columns: minmax(25em, 1fr) 16em;
+          grid-template-areas:
+            "banner banner"
+            "main horario"
+            "footer footer";
+          max-width: 1200px;
+          margin: 0 auto;
+          position: relative;
+        }
+        header {
+          grid-area: banner;
+        }
+        main {
+          grid-area: main;
+        }
+        aside {
+          grid-area: horario;
+          background-color: #f6f3ed;
+          padding: 1em;
+          padding-left: 45px;
+        }
+        footer {
+          grid-area: footer;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Curso</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
+          </ul>
+        </nav>
+        <h1>Departamento</h1>
+        <p class="centralizar">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+      </header>
+      <main>
+        <div>
+          <h3>Informatica</h3>
+          <p class="texto-justificado">
+            Vorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            nesciunt tempore quasi est distinctio mollitia. Asperiores
+            accusantium eaque natus libero consequatur vero eos nemo,
+            dignissimos totam earum modi quidem maiores.
+          </p>
+          <p class="more"><a href="#">Saiba mais em</a></p>
+        </div>
+        <div>
+          <h3>Informatica</h3>
+          <p class="texto-justificado">
+            Morem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            nesciunt tempore quasi est distinctio mollitia. Asperiores
+            accusantium eaque natus libero consequatur vero eos nemo,
+            dignissimos totam earum modi quidem maiores.
+          </p>
+          <p class="more"><a href="#">Saiba mais em</a></p>
+        </div>
+      </main>
+      <aside>
+        <h2>Horário</h2>
+        <p><span class="day">Segunda:</span>7h às 15h</p>
+        <p><span class="day">Terça:</span>8h às 15h</p>
+        <p><span class="day">Quarta:</span>7h às 14h</p>
+        <p><span class="day">Quinta:</span>8h às 14h</p>
+        <p><span class="day">Sexta:</span>8h às 15h</p>
+      </aside>
+      <footer>
+        <p>
+          <small>Direito dos Autores &copy;2023 <b>Bungadas</b> &amp; <b>Geniosoft</b>,
+          <a href="mailto:departamento@web.edu">Escrever para o Departamento</a
+          >,
+          <a href="tel:+244-999-999-000">Liga-nos pelo (244) 999-999-000 </a>
+          </small>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
