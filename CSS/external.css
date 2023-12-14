@@ -37,7 +37,7 @@ a {
 /* header styles */
 header {
   color: white;
-  background: url(../IMG/imagem-6.jpg) no-repeat center center;
+  background: url(../IMG/banner.jpg) no-repeat center center;
   background-size: cover;
   text-align: center;
   height: 13em;
@@ -141,85 +141,4 @@ footer p a {
 }
 .linelength {
   background: yellow;
-}
-
-@media screen and (min-width: 400px) {
-  nav ul li {
-    flex: none;
-  }
-  nav ul {
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  main img {
-    float: left;
-    margin: 0 1em 1em 0;
-  }
-
-  img[src*="img-1"] {
-    margin-left: 50px;
-    -webkit-shape-outside: url(../IMG/img-1.jpg);
-    shape-outside: url(../IMG/img-1.jpg);
-    -webkit-shape-margin: 1em;
-    shape-margin: 1em;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  header p {
-    display: block;
-    margin-top: -1.5em;
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 1.2em;
-  }
-  main,
-  h2,
-  h3 {
-    font-family: "Stint Ultra Expanded", Georgia, serif;
-  }
-  h2,
-  h3 {
-    font-weight: bold;
-  }
-  main {
-    line-height: 1.8em;
-    padding: 1em;
-    border: double 4px #eaddc4;
-    border-radius: 25px;
-    margin: 2.5%;
-  }
-}
-
-@media screen and (min-width: 940px) {
-  #container {
-    display: grid;
-    grid-template-rows: auto min-height 5em;
-    grid-template-columns: minmax(25em, 1fr) 16em;
-    grid-template-areas:
-      "banner banner"
-      "main hours"
-      "footer footer";
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-  }
-  header {
-    grid-area: banner;
-  }
-  main {
-    grid-area: main;
-  }
-  aside {
-    grid-area: hours;
-    background: url(../IMG/scallop.png) repeat-y left top;
-    background-color: #f6f3ed;
-    padding: 1em;
-    padding-left: 45px;
-  }
-  footer {
-    grid-area: footer;
-  }
 }

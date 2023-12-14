@@ -21,6 +21,26 @@
           justify-content: center;
         }
       }
+      @media screen and (min-width: 480px) {
+  main img {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+
+  img[src*="muffin"] {
+    margin-left: 50px;
+    -webkit-shape-outside: url(IMG/segundo-classificado.jpg);  
+    shape-outside: url(IMG/segundo-classificado.jpg);  
+    -webkit-shape-margin: 1em; 
+    shape-margin: 1em;
+  }
+  img[src*="bread"] {
+    -webkit-shape-outside: url(IMG/first-solve.jpg);  
+    shape-outside: url(IMG/first-solve.jpg);    
+    -webkit-shape-margin: 1em; 
+    shape-margin: 1em;
+  }
+}
       @media screen and (min-width: 600px) {
         header p {
           display: block;
@@ -96,7 +116,7 @@
       <main>
         <div>
           <h3>Informatica</h3>
-          <p class="texto-justificado">
+          <p class="texto-justificado"><img src="IMG/segundo-classificado.jpg" alt="Segundo Classificado na AOCPC" width="400px" height="300px">
             Vorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             nesciunt tempore quasi est distinctio mollitia. Asperiores
             accusantium eaque natus libero consequatur vero eos nemo,
@@ -106,7 +126,7 @@
         </div>
         <div>
           <h3>Informatica</h3>
-          <p class="texto-justificado">
+          <p class="texto-justificado"><img src="IMG/first-solve.jpg" alt="First Solve na AOCPC" width="400px" height="300px">
             Morem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             nesciunt tempore quasi est distinctio mollitia. Asperiores
             accusantium eaque natus libero consequatur vero eos nemo,
