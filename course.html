@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <title>Informaticweb</title>
+    <style>
+      @import url(css/main.css);
+
+      .course-container {
+        display: flex;
+        flex-flow: wrap;
+      }
+
+      legend {
+        text-align: center;
+        border: 1px solid #6bd87db7;
+        background-color: #6bd87db7;
+        border-radius: 5px;
+        font-size: 1.3em;
+      }
+      .row-principal {
+        background-color: #6bd87db7;
+        height: 30px;
+        border-radius: 5.4px;
+      }
+      fieldset {
+        border: none;
+      }
+      table {
+        border: 1px solid #6bd87d4d;
+        width: 100%;
+        height: 100%;
+        background-color: #6bd87d4d;
+        border-radius: 5.4px;
+        border: none;
+      }
+      h2,
+      td {
+        text-align: center;
+      }
+      div {
+        margin: 2px;
+      }
+      @media (min-width: 496px) {
+        .course-flex-item {
+          flex: 1 1 250px;
+        }
+      }
+      @media (min-width: 768px) {
+        .conteudo-principal {
+          max-width: none;
+        }
+        .course-flex-item {
+          flex: 1 1 350px;
+        }
+      }
+      @media (min-width: 1090px) {
+        .course-flex-item {
+          flex: 1 1 550px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html" class="menu-link">Home</a></li>
+          <li><a href="course.html" class="menu-link active">Curso</a></li>
+          <li><a href="events.html" class="menu-link">Eventos</a></li>
+          <li><a href="help.html" class="menu-link">Ajuda</a></li>
+        </ul>
+      </nav>
+      <h1 class="title">Informaticweb</h1>
+    </header>
+    <main class="conteudo-principal">
+      <section>
+        <h2>Engenharia Informática</h2>
+        <fieldset class="course-container">
+          <legend>Quadro de disciplinas e suas precedências</legend>
+          <div class="course-flex-item">
+            <table>
+              <tr>
+                <th colspan="2" class="row-principal">1º Ano - 1º Semestre</th>
+              </tr>
+              <tr>
+                <th class="second-row">Disciplina</th>
+                <th class="second-row">Disciplinas precedentes</th>
+              </tr>
+              <tr>
+                <td>Análise Matemática I</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>Álgebra Linear e Geometria Analítica</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>Inglês Técnico I</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>Fundamentos de Tecnólogia de Informação</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>Fundamentos de Programação</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>&emsp;</td>
+              </tr>
+            </table>
+          </div>
+          <div class="course-flex-item">
+            <table>
+              <tr>
+                <th colspan="2" class="row-principal">1º Ano - 2º Semestre</th>
+              </tr>
+              <tr>
+                <th class="second-row">Disciplina</th>
+                <th class="second-row">Disciplinas precedentes</th>
+              </tr>
+              <tr>
+                <td>Análise Matemática II</td>
+                <td>Análise Matemática I</td>
+              </tr>
+              <tr>
+                <td>Física Geral</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>Algóritmos</td>
+                <td>Fundamentos de Programação</td>
+              </tr>
+              <tr>
+                <td>Arquitectura de Computadores I</td>
+                <td>Fundamentos de Tecnólogia de Informação</td>
+              </tr>
+              <tr>
+                <td>Inglês Técnico II</td>
+                <td>Inglês Técnico I</td>
+              </tr>
+              <tr>
+                <td>&emsp;</td>
+              </tr>
+            </table>
+          </div>
+          <div class="course-flex-item">
+            <table>
+              <tr>
+                <th colspan="2" class="row-principal">2º Ano - 1º Semestre</th>
+              </tr>
+              <tr>
+                <th class="second-row">Disciplina</th>
+                <th class="second-row">Disciplinas precedentes</th>
+              </tr>
+              <tr>
+                <td>Electromagnetismo</td>
+                <td>Física Geral</td>
+              </tr>
+              <tr>
+                <td>Electrónica I</td>
+                <td>Electromagnetismo</td>
+              </tr>
+              <tr>
+                <td>Lógica e Computabilidade</td>
+                <td>Análise Matemática I, II</td>
+              </tr>
+              <tr>
+                <td>Matemática Discreta</td>
+                <td>Análise Matemática I, II</td>
+              </tr>
+              <tr>
+                <td>Programação Orientada aos Objectos</td>
+                <td>Algóritmos</td>
+              </tr>
+              <tr>
+                <td>Arquitectura de Computadores II</td>
+                <td>Arquitectura de Computadores I</td>
+              </tr>
+            </table>
+          </div>
+          <div class="course-flex-item">
+            <table>
+              <tr>
+                <th colspan="2" class="row-principal">2º Ano - 2º Semestre</th>
+              </tr>
+              <tr>
+                <th class="second-row">Disciplina</th>
+                <th class="second-row">Disciplinas precedentes</th>
+              </tr>
+              <tr>
+                <td>Electrónica II</td>
+                <td>Electrónica I</td>
+              </tr>
+              <tr>
+                <td>Estrutura de Dados</td>
+                <td>Programação Orientada aos Objectos</td>
+              </tr>
+              <tr>
+                <td>Probabilidade e Estatística</td>
+                <td>Análise Matemática II</td>
+              </tr>
+              <tr>
+                <td>Base de Dados I</td>
+                <td>Algóritmos</td>
+              </tr>
+              <tr>
+                <td>Redes de Computadores I</td>
+                <td>Arquitectura de Computadores I e II</td>
+              </tr>
+              <tr>
+                <td>Sistema Operativo I</td>
+                <td>Arquitectura de Computadores I e II</td>
+              </tr>
+            </table>
+          </div>
+          <div class="course-flex-item">
+            <table>
+              <tr>
+                <th colspan="2" class="row-principal">3º Ano - 1º Semestre</th>
+              </tr>
+              <tr>
+                <th class="second-row">Disciplina</th>
+                <th class="second-row">Disciplinas precedentes</th>
+              </tr>
+              <tr>
+                <td>Base de Dados II</td>
+                <td>Base de Dados I</td>
+              </tr>
+              <tr>
+                <td>Interação Humano-Computador</td>
+                <td>Estrutura de Dados</td>
+              </tr>
+              <tr>
+                <td>Metodologia de Desenvolvimento de Software</td>
+                <td>Estrutura de Dados</td>
+              </tr>
+              <tr>
+                <td>Redes de Computadores II</td>
+                <td>Redes de Computadores I</td>
+              </tr>
+              <tr>
+                <td>Sistema Operativo II</td>
+                <td>Arquitectura de Computadores I e II</td>
+              </tr>
+            </table>
+          </div>
+          <div class="course-flex-item">
+            <table>
+              <tr>
+                <th colspan="2" class="row-principal">3º Ano - 2º Semestre</th>
+              </tr>
+              <tr>
+                <th class="second-row">Disciplina</th>
+                <th class="second-row">Disciplinas precedentes</th>
+              </tr>
+              <tr>
+                <td>Comunicação de Dados</td>
+                <td>Redes de Computadores I e II</td>
+              </tr>
+              <tr>
+                <td>Inteligência Artificial</td>
+                <td>Interação Humano-Computador</td>
+              </tr>
+              <tr>
+                <td>Metodologia de Pesquisa Científica</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>Projecto</td>
+                <td>Todas anteriores</td>
+              </tr>
+              <tr>
+                <td>Sistemas Distribuídos</td>
+                <td>Redes de Computadores I e II</td>
+              </tr>
+            </table>
+          </div>
+          <div class="course-flex-item">
+            <table>
+              <tr>
+                <th colspan="2" class="row-principal">4º Ano - 1º Semestre</th>
+              </tr>
+              <tr>
+                <th class="second-row">Disciplina</th>
+                <th class="second-row">Disciplinas precedentes</th>
+              </tr>
+              <tr>
+                <td>Engenharia de Software</td>
+                <td>Metodologia de Desenvolvimento de Software</td>
+              </tr>
+              <tr>
+                <td>Sistema de Suporte à Decisão</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>Opção I</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>Computação Gráfica</td>
+                <td>Interação Humano-Computador</td>
+              </tr>
+              <tr>
+                <td>Desenvolvimento de Aplicações para Web I</td>
+                <td>Metodologia de Desenvolvimento de Software</td>
+              </tr>
+            </table>
+          </div>
+          <div class="course-flex-item">
+            <table>
+              <tr>
+                <th colspan="2" class="row-principal">4º Ano - 2º Semestre</th>
+              </tr>
+              <tr>
+                <th class="second-row">Disciplina</th>
+                <th class="second-row">Disciplinas precedentes</th>
+              </tr>
+              <tr>
+                <td>Desenvolvimento de Aplicações para Web II</td>
+                <td>Desenvolvimento de Aplicações para Web I</td>
+              </tr>
+              <tr>
+                <td>Gestão de Centros de Dados e Cloud Computing</td>
+                <td>Redes de Computadores II</td>
+              </tr>
+              <tr>
+                <td>Computação Multimédia</td>
+                <td>Computação Gráfica</td>
+              </tr>
+              <tr>
+                <td>Comunicação Móvel e Ubíquo</td>
+                <td>Redes de Computadores II</td>
+              </tr>
+              <tr>
+                <td>Segurança de Sistemas de Informação</td>
+                <td>Redes de Computadores II</td>
+              </tr>
+            </table>
+          </div>
+          <div class="course-flex-item">
+            <table>
+              <tr>
+                <th colspan="2" class="row-principal">5º Ano - 1º Semestre</th>
+              </tr>
+              <tr>
+                <th class="second-row">Disciplina</th>
+                <th class="second-row">Disciplinas precedentes</th>
+              </tr>
+              <tr>
+                <td>Projecto Final</td>
+                <td>Todas anteriores</td>
+              </tr>
+              <tr>
+                <td>Gestão de Projectos</td>
+                <td>Todas anteriores</td>
+              </tr>
+              <tr>
+                <td>Opção II</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>Organização e Gestão de Empresas e Empreendedorismo</td>
+                <td>--</td>
+              </tr>
+            </table>
+          </div>
+          <div class="course-flex-item">
+            <table>
+              <tr>
+                <th colspan="2" class="row-principal">5º Ano - 2º Semestre</th>
+              </tr>
+              <tr>
+                <th class="second-row">Disciplina</th>
+                <th class="second-row">Disciplinas precedentes</th>
+              </tr>
+              <tr>
+                <td>
+                  Tópicos Complementares (Legal / Profissional / Ética /
+                  Sociedade)
+                </td>
+                <td>Todas anteriores</td>
+              </tr>
+              <tr>
+                <td>Projecto Final</td>
+                <td>Todas anteriores</td>
+              </tr>
+            </table>
+          </div>
+        </fieldset>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <h4>Horário</h4>
+        <p>Segunda - Sábado: 08h:00min até 15h:00min</p>
+      </div>
+      <div>
+        <h4>Fale Connosco</h4>
+        <p>Contacto: +244 951005263</p>
+        <p>Endereço: Cidade Universitária, Camama 1</p>
+      </div>
+      <div>
+        <h4>Bungadas & Geniosoft</h4>
+        <p>Todos os direitos reservados&copy; 2023.</p>
+      </div>
+    </footer>
+  </body>
+</html>

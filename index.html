@@ -3,175 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Departamento</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-
+    <link rel="icon" href="assets/favicon.ico" />
+    <title>Informaticweb</title>
     <style>
-      @import url(CSS/external.css);
-      .texto-justificado {
+      @import url(css/main.css);
+      .seccao {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .seccao h2 {
+        padding-left: 10px;
+        box-shadow: 0 1px 5px #0000004d;
+      }
+      .paragrafo-ajustado {
+        padding-left: 3px;
+        margin-right: 9px;
         text-align: justify;
-      }
-      img{
-        max-width: 100%;
-      }
-      p.texto-justificado::first-letter {
-        font-size: 300%;
-        color: #d1633c;
-      }
-      @media screen and (min-width: 400px) {
-        nav ul li {
-          flex: none;
-        }
-        nav ul {
-          justify-content: center;
-        }
-      }
-      @media screen and (min-width: 480px) {
-        main img {
-          float: left;
-          margin: 0 1em 1em 0;
-        }
-        img[src*="segundo-classificado"] {
-          margin-left: 30px;
-          -webkit-shape-outside: url(IMG/segundo-classificado.jpg);
-          shape-outside: url(IMG/segundo-classificado.jpg);
-          -webkit-shape-margin: 1em;
-          shape-margin: 1em;
-        }
-        img[src*="first-solve"] {
-          margin-left: 30px;
-          -webkit-shape-outside: url(IMG/first-solve.jpg);
-          shape-outside: url(IMG/first-solve.jpg);
-          -webkit-shape-margin: 1em;
-          shape-margin: 1em;
-        }
-      }
-      @media screen and (min-width: 600px) {
-        header p {
-          display: block;
-          margin-top: -1.5em;
-          font-family: Georgia, serif;
-          font-style: italic;
-          font-size: 1.2em;
-        }
-        main,
-        h2,
-        h3 {
-          font-family: Minha Fonte, Georgia, serif;
-        }
-        h2,
-        h3 {
-          font-weight: bold;
-        }
-        main {
-          line-height: 1.8em;
-          padding: 1em;
-          border: double 4px #eaddc4;
-          border-radius: 25px;
-          margin: 2.5%;
-        }
-      }
-      @media screen and (min-width: 940px) {
-        #container {
-          display: grid;
-          grid-template-rows: auto min-height 5em;
-          grid-template-columns: minmax(25em, 1fr) 16em;
-          grid-template-areas:
-            "banner banner"
-            "main horario"
-            "footer footer";
-          max-width: 1200px;
-          margin: 0 auto;
-          position: relative;
-        }
-        header {
-          grid-area: banner;
-        }
-        main {
-          grid-area: main;
-        }
-        aside {
-          grid-area: horario;
-          background-color: #f6f3ed;
-          padding: 1em;
-          padding-left: 45px;
-        }
-        footer {
-          grid-area: footer;
-        }
+        text-indent: 1.4em;
       }
     </style>
   </head>
   <body>
-    <div id="container">
-      <header>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Curso</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Sobre</a></li>
-          </ul>
-        </nav>
-        <h1>Departamento</h1>
-        <p class="centralizar">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html" class="menu-link active">Home</a></li>
+          <li><a href="course.html" class="menu-link">Curso</a></li>
+          <li><a href="events.html" class="menu-link">Eventos</a></li>
+          <li><a href="help.html" class="menu-link">Ajuda</a></li>
+        </ul>
+      </nav>
+      <h1 class="title">Informaticweb</h1>
+    </header>
+    <main class="conteudo-principal">
+      <section class="seccao seccao-1">
+        <h2>Sobre Nós</h2>
+        <p class="paragrafo-ajustado">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+          officia tenetur quis incidunt rem, molestiae accusamus! Iste,
+          obcaecati harum, et iusto explicabo adipisci porro eos corrupti illo
+          saepe possimus enim!
         </p>
-      </header>
-      <main>
-        <div>
-          <h3>Informatica</h3>
-          <p class="texto-justificado">
-            <img
-              src="IMG/segundo-classificado.jpg"
-              alt="Segundo Classificado na AOCPC"
-              width="360px"
-              height="260px"
-            />
-            Vorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            nesciunt tempore quasi est distinctio mollitia. Asperiores
-            accusantium eaque natus libero consequatur vero eos nemo,
-            dignissimos totam earum modi quidem maiores.
-          </p>
-          <p class="more"><a href="#">Saiba mais em</a></p>
-        </div>
-        <div>
-          <h3>Informatica</h3>
-          <p class="texto-justificado">
-            <img
-              src="IMG/first-solve.jpg"
-              alt="First Solve na AOCPC"
-              width="360px"
-              height="350px"
-            />
-            Morem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            nesciunt tempore quasi est distinctio mollitia. Asperiores
-            accusantium eaque natus libero consequatur vero eos nemo,
-            dignissimos totam earum modi quidem maiores.
-          </p>
-          <p class="more"><a href="#">Saiba mais em</a></p>
-        </div>
-      </main>
-      <aside>
-        <h2>Horário</h2>
-        <p><span class="day">Segunda:</span>7h às 15h</p>
-        <p><span class="day">Terça:</span>8h às 15h</p>
-        <p><span class="day">Quarta:</span>7h às 14h</p>
-        <p><span class="day">Quinta:</span>8h às 14h</p>
-        <p><span class="day">Sexta:</span>8h às 15h</p>
-      </aside>
-      <footer>
-        <p>
-          <small
-            >Direito dos autores &copy;2023 <b>Bungadas</b> &amp;
-            <b>Geniosoft</b>,
-            <a href="mailto:departamento@web.edu"
-              >Escrever para o Departamento</a
-            >,
-            <a href="tel:+244-999-999-000">Liga-nos pelo (244) 999-999-000 </a>
-          </small>
+      </section>
+      <section class="seccao seccao-2">
+        <h2>Chefe do DEI</h2>
+        <p class="paragrafo-ajustado">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+          officia tenetur quis incidunt rem, molestiae accusamus! Iste,
+          obcaecati harum, et iusto explicabo adipisci porro eos corrupti illo
+          saepe possimus enim!
         </p>
-      </footer>
-    </div>
+      </section>
+      <section class="seccao seccao-3">
+        <h2>Pessoal Administrativo</h2>
+        <p class="paragrafo-ajustado">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+          officia tenetur quis incidunt rem, molestiae accusamus! Iste,
+          obcaecati harum, et iusto explicabo adipisci porro eos corrupti illo
+          saepe possimus enim!
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <h4>Horário</h4>
+        <p>Segunda - Sábado: 08h:00min até 15h:00min</p>
+      </div>
+      <div>
+        <h4>Fale Connosco</h4>
+        <p>Contacto: +244 951005263</p>
+        <p>Endereço: Cidade Universitária, Camama 1</p>
+      </div>
+      <div>
+        <h4>Bungadas & Geniosoft</h4>
+        <p>Todos os direitos reservados&copy; 2023.</p>
+      </div>
+    </footer>
   </body>
 </html>
