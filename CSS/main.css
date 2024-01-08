@@ -1,0 +1,100 @@
+@charset "uft-8";
+@font-face {
+  font-family: "FontFamily";
+  src: url(../font/Cairo-Regular.ttf);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: FontFamily, sans-serif;
+  font-size: 100%;
+  margin: 0;
+}
+* {
+  box-sizing: inherit;
+}
+
+header {
+  background: url("../img/banner.jpg") no-repeat center center;
+  background-size: cover;
+  text-transform: uppercase;
+
+  height: 12em;
+}
+.title {
+  margin-top: 80px;
+  text-align: center;
+  color: #04ba71;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.menu-link {
+  display: block;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: 1px solid #04454d;
+}
+nav {
+  background: #f5f2eb;
+  opacity: 0.7;
+}
+footer {
+  background-color: #000;
+  color: white;
+}
+footer div > h4 {
+  border-bottom: 1px solid #04ba71;
+  margin: 10px;
+}
+footer div > p {
+  margin: 10px;
+}
+
+/* Media Query */
+@media (max-width: 480px) {
+  .seccao {
+    border-left: 3px solid #04ba71;
+  }
+  /* .course-item {
+    max-width: 100%;
+  } */
+}
+@media (min-width: 600px) {
+  .conteudo-principal {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .seccao {
+    margin: 10px;
+    flex: 1 1 0px;
+    text-align: center;
+  }
+  .seccao-1 {
+    flex: 10 2 22px;
+  }
+  .seccao-2 {
+    flex: 6 2 22px;
+  }
+  .seccao-3 {
+    flex: 6 2 22px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* Page Course */
+}
